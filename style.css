@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+section {
+    background-image: url('./alexander-grey-62vi3TG5EDg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    position: relative;
+}
+
+.color{
+    color:#e91e63 ;
+}
+.text, .text__answers{
+    text-align: center;
+    font-size: 50px;
+    padding-top:150px;
+    
+}
+
+.text__answers{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.answer{
+    font-size: 20px;
+}
+
+.cat{
+    display: flex;
+    align-items: center;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+.answer {
+    background-color: #e91e63; 
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+.answer:hover {
+    background-color: #ff4081; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* YES */
+
+.happy{
+    display: flex;
+    justify-content: space-evenly;
+}
+.yes__btn{
+
+    text-align: center;
+}
+
+/* No.. */
+
+.no__gif{
+    display: flex;
+    justify-content: center;
+}
+
+/* DEADS */
+.gojo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dead__img {
+    width: 1868px;
+    height: auto; 
+}
+.white{
+    color: white;
+}
+
+/* Thanks */
+
+p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+img{
+height: auto;
+width: auto;
+}
+li{
+    list-style: none;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+}
+.proper {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-auto-rows: minmax(150px, auto); /* Set minimum row height */
+    gap: 10px; /* Gap between images */
+}
+
+.proper li {
+    height: auto; /* Auto height to fit content */
+    max-width: 150px; /* Limit maximum width */
+    margin: auto; /* Center the images horizontally */
+}
+
+.proper img {
+    width: 100%; /* Ensure images fill the grid cells */
+    height: auto; /* Auto height to maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
